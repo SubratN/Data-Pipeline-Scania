@@ -11,7 +11,7 @@ class MongodbOperation:
 
         self.client = pymongo.MongoClient(os.getenv('MONGO_DB_URL'),tlsCAFile=ca)
         # self.db_name="ineuron"
-        self.db_name="Skania_Company_DB"
+        self.db_name="Scania_Company_DB"
 
     def insert_many(self,collection_name,records:list):
         self.client[self.db_name][collection_name].insert_many(records)

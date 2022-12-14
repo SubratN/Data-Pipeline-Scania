@@ -31,23 +31,6 @@ import pandas as pd
 from typing import List
 from src.entity.generic import Generic, instance_to_dict
 
-# FILE_PATH = "/home/avnish/iNeuron_Private_Intelligence_Limited/industry_ready_project/projects/data_pipeline/kafka-sensor/sample_data/sensor/aps_failure_training_set1.csv"
-
-
-# def car_to_dict(car: Generic, ctx):
-#     """
-#     Returns a dict representation of a User instance for serialization.
-#     Args:
-#         user (User): User instance.
-#         ctx (SerializationContext): Metadata pertaining to the serialization
-#             operation.
-#     Returns:
-#         dict: Dict populated with user attributes to be serialized.
-#         :param car:
-#     """
-
-#     # User._address must not be serialized; omit from dict
-#     return car.record
 
 
 def delivery_report(err, msg):
