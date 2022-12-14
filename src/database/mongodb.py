@@ -10,7 +10,6 @@ class MongodbOperation:
     def __init__(self) -> None:
 
         self.client = pymongo.MongoClient(os.getenv('MONGO_DB_URL'),tlsCAFile=ca)
-        # self.db_name="ineuron"
         self.db_name="Scania_Company_DB"
 
     def insert_many(self,collection_name,records:list):
